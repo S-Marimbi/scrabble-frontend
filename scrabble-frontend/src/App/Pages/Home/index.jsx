@@ -16,7 +16,7 @@ function Home() {
                 </Link>
             </div>
             <div>
-              Already have a player profile? Use Login
+              Already have a player profile? Use Login!
             </div>       
         </div>
     );
