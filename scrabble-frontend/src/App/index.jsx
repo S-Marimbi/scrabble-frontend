@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import Home from "./Pages/Home";
+import Signup from "./Pages/SignUp";
 import APPCONTEXT from "./Context/AppContext.jsx";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/signup" element={<Signup />} />
             </Routes>
             </BrowserRouter>
         </APPCONTEXT.Provider>
