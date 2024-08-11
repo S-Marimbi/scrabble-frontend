@@ -15,9 +15,12 @@ function Home() {
                      <button className='hbutton'>Login Here</button>
                 </Link>
             </div>
-            <div>
-              Already have a player profile? Use Login!
-            </div>       
+            <div style={{ marginTop: '20px' }}>
+                <p>Already have a player profile? <Link to="/login">LogIn!</Link></p>
+            </div> 
+            <div style={{ marginTop: '20px' }}>
+                <p>Do not have a player profile? <Link to="/signup">SignUp!</Link></p>
+            </div> 
         </div>
     );
 }
