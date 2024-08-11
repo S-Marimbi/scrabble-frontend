@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Error from '../../Components/Error';
 
 function Signup() {
@@ -73,6 +73,9 @@ function Signup() {
             </form>
             <div>
                 <Error errorMessage={errorMessage} />
+            </div>
+            <div style={{ marginTop: '20px' }}>
+                <p>Have a player profile? <Link to="/login">LogIn!</Link></p>
             </div>
         </div>
     );
