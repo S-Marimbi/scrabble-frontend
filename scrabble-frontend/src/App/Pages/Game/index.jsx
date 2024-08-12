@@ -76,9 +76,9 @@ function Game() {
         <Board board={board} setBoard={setBoard} getBoard={getBoard} />
       </div>
       <div>
-        <h2>Player Rack</h2>
+        <h2>{user?.user_name}'s Rack</h2>
         <Rack tiles={player_rack} setTiles={setPlayer_rack} getRack={getRack}/>
-        <h2>Computer Rack</h2>
+        <h2>Computer's Rack</h2>
         <Rack tiles={computer_rack} setTiles={setComputer_rack} />
       </div>
     </div>
