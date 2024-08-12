@@ -3,7 +3,7 @@ import { useState } from "react";
 import Home from "./Pages/Home";
 import Signup from "./Pages/SignUp";
 import Login from "./Pages/LogIn";
-import APPCONTEXT from "/home/ryan-mwendwa/scrabble-frontend/scrabble-frontend/src/App/Context/AppContext.jsx";
+import APPCONTEXT from "./Context/AppContext.jsx";
 import Game from "./Pages/Game";
 
 function App() {

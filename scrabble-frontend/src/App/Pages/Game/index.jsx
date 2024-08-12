@@ -1,4 +1,4 @@
-import APPCONTEXT from '/home/ryan-mwendwa/scrabble-frontend/scrabble-frontend/src/App/Context/AppContext.jsx';
+import APPCONTEXT from '../../Context/AppContext.jsx';
 import axios from "axios";
 import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
