@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import axios from "axios";
 import Error from '../../Components/Error';
-import APPCONTEXT from "/home/ryan-mwendwa/scrabble-frontend/scrabble-frontend/src/App/Context/AppContext.jsx";
+import APPCONTEXT from "../../Context/AppContext.jsx"
 import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
