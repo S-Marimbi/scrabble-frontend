@@ -4,9 +4,11 @@ import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Board from "./Board";
 import Rack from "./Rack";
+import Logout from './Logout/index.jsx';
+import Newgame from './Newgame/index.jsx';
 
 function Game() {
-  const { user, token } = useContext(APPCONTEXT);
+  const { user, token, setUser, setToken } = useContext(APPCONTEXT);
   const navigate = useNavigate();
   const [board, setBoard] = useState([]);
   const [player_rack, setPlayer_rack] = useState([]); 
@@ -65,8 +67,8 @@ function Game() {
         <div className="message-panel">
           <p className="welcome-message">Welcome Player: {user?.user_name}</p>
           <div className="button-group">
-            <button className="logout-button">Logout</button>
-            <button className="new-game-button">New Game</button>
+            <button className="logout-button" onClick={() => Logout(navigate, setUser, setToken, token)} >Logout</button>
+            <button className="new-game-button" onClick={() => Newgame({ token, setBoard, setPlayer_rack, setComputer_rack })}>New Game</button>
           </div>
         </div>
       </div>
