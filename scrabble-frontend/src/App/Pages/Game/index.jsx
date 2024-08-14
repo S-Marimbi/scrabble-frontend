@@ -76,7 +76,7 @@ function Game() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Board board={board} setBoard={setBoard} getBoard={getBoard} />
       </div>
-      <div>
+      <div className="rack">
         <h2>{user?.user_name}'s Rack</h2>
         <Rack tiles={player_rack} setTiles={setPlayer_rack} getRack={getRack}/>
         <h2>Computer's Rack</h2>

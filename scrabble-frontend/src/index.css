@@ -284,3 +284,60 @@ body {
 .new-game-button:hover {
   background-color: green
 }
+
+
+.move-form {
+  display: flex;
+  flex-direction: column; /* Stack the form elements vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  padding: 10px;
+  background-color: #f2f2f2; /* Light background for the form */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px; /* Space above the form */
+}
+
+.move-form form {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between items */
+}
+
+.move-form form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin-right: 10px; /* Space between label and input */
+}
+
+.move-form form input[type="text"],
+.move-form form input[type="number"],
+.move-form form select {
+  width: 100px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px; /* Space between inputs */
+}
+
+.move-form form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+
+}
+
+.move-form form input:focus,
+.move-form form select:focus {
+  outline: none;
+  box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
