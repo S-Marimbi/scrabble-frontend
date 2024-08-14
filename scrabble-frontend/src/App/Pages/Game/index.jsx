@@ -6,6 +6,7 @@ import Board from "./Board";
 import Rack from "./Rack";
 import Logout from './Logout/index.jsx';
 import Newgame from './Newgame/index.jsx';
+import Move from './Move/index.jsx';
 
 function Game() {
   const { user, token, setUser, setToken } = useContext(APPCONTEXT);
@@ -81,6 +82,7 @@ function Game() {
         <h2>Computer's Rack</h2>
         <Rack tiles={computer_rack} setTiles={setComputer_rack} />
       </div>
+      <Move getBoard={getBoard} getRack={getRack} />
     </div>
   );
 }
