@@ -15,8 +15,8 @@ const styles = {
     display: 'flex',
   },
   tile: {
-    width: '10px',  
-    height: '10px', 
+    width: '5px',  
+    height: '5px', 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
