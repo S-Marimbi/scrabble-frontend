@@ -288,20 +288,20 @@ body {
 
 .move-form {
   display: flex;
-  flex-direction: column; /* Stack the form elements vertically */
-  align-items: flex-start; /* Align items to the start of the container */
+  flex-direction: column;
+  align-items: flex-start; 
   padding: 10px;
-  background-color: #f2f2f2; /* Light background for the form */
+  background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin-top: 20px; /* Space above the form */
+  margin-top: 20px; 
 }
 
 .move-form form {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if needed */
-  align-items: center; /* Center items vertically */
-  gap: 10px; /* Space between items */
+  flex-wrap: wrap; 
+  align-items: center; 
+  gap: 10px;
 }
 
 .move-form form label {
@@ -310,27 +310,27 @@ body {
   font-weight: bold;
   font-size: 0.7em;
   text-transform: uppercase;
-  margin-right: 10px; /* Space between label and input */
+  margin-right: 10px; 
 }
 
 .move-form form input[type="text"],
 .move-form form input[type="number"],
 .move-form form select {
-  width: 100px; /* Adjust width as needed */
+  width: 100px; 
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
-  margin-right: 10px; /* Space between inputs */
+  margin-right: 10px; 
 }
 
 .move-form form button {
-  padding: 10px 20px;
+  padding: 5px 15px; 
   border: none;
   border-radius: 4px;
   background-color: #007bff;
   color: white;
   cursor: pointer;
-
+  margin-top: 10px;
 }
 
 .move-form form input:focus,

@@ -8,6 +8,7 @@ import Logout from './Logout/index.jsx';
 import Newgame from './Newgame/index.jsx';
 import Move from './Move/index.jsx';
 import Swap from './SwapRack/index.jsx';
+import SkipTurn from './SkipTurn/index.jsx'
 
 function Game() {
   const { user, token, setUser, setToken } = useContext(APPCONTEXT);
@@ -86,6 +87,7 @@ function Game() {
       <Move getBoard={getBoard} getRack={getRack} />
       <div className="user-actions">
         <Swap getRack={getRack} />
+        <SkipTurn getBoard={getBoard} getRack={getRack} />
       </div>
     </div>
   );
