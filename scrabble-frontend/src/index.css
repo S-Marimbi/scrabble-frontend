@@ -1,12 +1,33 @@
 body{
-  background-color: #173333;
-  color: #93FFE8;
-  overflow: hidden;
+  background-color: #fff0db;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
+  color: aquamarine;
 }
+
+.footer{
+  text-align: center;
+  color: aquamarine; 
+}
+
+.lfooter{
+  text-align: center;
+  color: aquamarine;
+  transition: 300ms ease-in-out;
+}
+
+.lfooter:hover{
+  color: white;
+  font-weight: bold;
+}
+
 
 .home {
   background:#2d4e4e;
@@ -32,6 +53,12 @@ h1 {
   font-weight: bold;
   width: fit-content;
   cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.hbutton:hover {
+  color: #2d4e4e;
+  background-color: aquamarine;
 }
 
 .hinput{
@@ -42,30 +69,18 @@ h1 {
   margin-bottom: 24px;
 }
 
-body {
-  font-family: 'Georgia', serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 .signup-class {
-  background-color: #fff;
-  border: 2px solid #dedede;
-  border-radius: 8px;
+  background-color: #2d4e4e;
+  border-radius: 20px;
   padding: 30px;
   width: 350px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 10px black;
   text-align: center;
 }
 
 .signup-class h1 {
-  color: #2c3e50;
+  color: aquamarine;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -79,7 +94,7 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #34495e;
+  color: #9dc183;
 }
 
 .form-class input {
@@ -134,30 +149,19 @@ body {
   }
 }
 
-body {
-  font-family: 'Georgia', serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .login-class {
-  background-color: #fff;
-  border: 2px solid #dedede;
+  background-color: #2d4e4e;
   border-radius: 8px;
   padding: 30px;
   width: 350px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 10px black;
   text-align: center;
 }
 
 .login-class h1 {
-  color: #2c3e50;
+  color: aquamarine;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -169,9 +173,8 @@ body {
 
 .form-class label {
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
-  color: #34495e;
+  color: aquamarine;
 }
 
 .form-class input {
@@ -192,6 +195,7 @@ body {
   width: 100%;
   background-color: #297575;
   color: #fff;
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   padding: 10px;
@@ -202,6 +206,7 @@ body {
 
 .submit-button:hover {
   background-color: turquoise;
+  color: #2d4e4e;
 }
 
 .error-message {

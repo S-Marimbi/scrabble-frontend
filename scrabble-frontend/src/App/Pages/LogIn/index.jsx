@@ -49,6 +49,7 @@ function Login() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        placeholder='Enter email address'
                     />
                 </div>
                 <div className="form-class">
@@ -60,6 +61,7 @@ function Login() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
+                        placeholder='Enter your password'
                     />
                 </div>
                 <button type="submit" className="submit-button">Login</button>
@@ -67,8 +69,8 @@ function Login() {
             <div>
                 <Error errorMessage={errorMessage} />
             </div>
-            <div style={{ marginTop: '20px' }}>
-                <p>Do not have a player profile? <Link to="/signup">SignUp!</Link></p>
+            <div className='footer'>
+                <p>Do not have a player profile? <Link className='lfooter' to="/signup">SignUp!</Link></p>
             </div>
         </div>
     );

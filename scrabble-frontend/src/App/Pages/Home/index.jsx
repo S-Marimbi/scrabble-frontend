@@ -15,11 +15,11 @@ function Home() {
                      <button className='hbutton'>Login Here</button>
                 </Link>
             </div>
-            <div style={{ marginTop: '20px' }}>
-                <p>Already have a player profile? <Link to="/login">LogIn!</Link></p>
+            <div className='footer'>
+                <p>Already have a player profile? <Link className='lfooter' to="/login">LogIn!</Link></p>
             </div> 
-            <div style={{ marginTop: '20px' }}>
-                <p>Do not have a player profile? <Link to="/signup">SignUp!</Link></p>
+            <div className='footer'>
+                <p>Do not have a player profile? <Link className='lfooter' to="/signup">SignUp!</Link></p>
             </div> 
         </div>
     );

@@ -45,6 +45,7 @@ function Signup() {
                         value={user_name}
                         onChange={(e) => setUser_name(e.target.value)}
                         required
+                        placeholder='Enter user name here'
                     />
                 </div>
                 <div className="form-class">
@@ -56,6 +57,7 @@ function Signup() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        placeholder='Enter email here'
                     />
                 </div>
                 <div className="form-class">
@@ -67,6 +69,7 @@ function Signup() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
+                        placeholder='Enter your password here'
                     />
                 </div>
                 <button type="submit" className="submit-button">Register</button>
@@ -74,8 +77,8 @@ function Signup() {
             <div>
                 <Error errorMessage={errorMessage} />
             </div>
-            <div style={{ marginTop: '20px' }}>
-                <p>Have a player profile? <Link to="/login">LogIn!</Link></p>
+            <div className='footer'>
+                <p>Have a player profile? <Link className='lfooter' to="/login">LogIn!</Link></p>
             </div>
         </div>
     );
