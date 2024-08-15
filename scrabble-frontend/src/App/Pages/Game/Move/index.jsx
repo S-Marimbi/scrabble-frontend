@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
-import axios from "axios";
-import APPCONTEXT from "../../../Context/AppContext.jsx";
+import axios from 'axios';
+import APPCONTEXT from '../../../Context/AppContext.jsx';
 
-function Move({ getBoard, getRack }) {
+function Move({ getBoard, getRack, handleComputerMove }) {
   const { token } = useContext(APPCONTEXT);
   const [word, setWord] = useState('');
   const [row, setRow] = useState('');
@@ -13,8 +13,8 @@ function Move({ getBoard, getRack }) {
     e.preventDefault();
 
     axios({
-      method: "POST",
-      url: "http://127.0.0.1:9000/game/move",
+      method: 'POST',
+      url: 'http://127.0.0.1:9000/game/move',
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -29,9 +29,25 @@ function Move({ getBoard, getRack }) {
       alert(res.data.message);
       getBoard();
       getRack();
+      
+      axios({
+        method: 'POST',
+        url: 'http://127.0.0.1:9000/game/computer-move',
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((res) => {
+        console.log(res.data.message);
+        getBoard();
+        getRack();
+      })
+      .catch((err) => {
+        console.error('Computer move failed', err.response?.data?.message || err.message);
+      });
     })
     .catch((err) => {
-      alert(err.response?.data?.message || "Failed to play the move. Please try again.");
+      alert(err.response?.data?.message || 'Failed to play the move. Please try again.');
     });
   };
 
