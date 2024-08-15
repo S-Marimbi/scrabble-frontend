@@ -8,7 +8,11 @@ const rackStyles = {
   },
   rack: {
     display: 'flex',
-    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    padding: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '8px',
   },
   tile: {
     width: '30px',

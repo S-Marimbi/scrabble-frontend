@@ -15,8 +15,8 @@ const styles = {
     display: 'flex',
   },
   tile: {
-    width: '30px',  
-    height: '30px', 
+    width: '5px',  
+    height: '5px', 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -57,6 +57,7 @@ function Board(props) {
     </div>
   );
 }
+
 
 function Row(props) {
   const { row = [], rowIndex } = props;
