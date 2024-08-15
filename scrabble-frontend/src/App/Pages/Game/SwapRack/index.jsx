@@ -23,7 +23,9 @@ function Swap({ getRack }) {
   };
 
   return (
-    <button onClick={handleSwap}>Swap Rack</button>
+    <div className='SwapRack'>
+      <button onClick={handleSwap}>Swap Rack</button>
+    </div>
   );
 }
 

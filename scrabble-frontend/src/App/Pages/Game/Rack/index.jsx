@@ -9,28 +9,36 @@ const rackStyles = {
   rack: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#9dc183',  
     padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '8px',
+    borderRadius: '12px',        
+    boxShadow: '0 6px 12px rgba(0, 0, 0, 0.4)',  
+    marginBottom: '10px',
   },
   tile: {
-    width: '30px',
+    width: '30px',             
     height: '30px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border: '1px solid #000',
-    fontSize: '14px',
+    border: '2px solid #fff',  
+    borderRadius: '12px',      
+    fontSize: '20px',          
     fontWeight: 'bold',
-    margin: '0 5px',
+    margin: '0 8px',         
     cursor: 'pointer', 
-    transition: 'background-color 0.3s', 
+    transition: 'background-color 0.3s, transform 0.3s, box-shadow 0.3s', 
+    background: 'linear-gradient(145deg, #ffffff, #e2e2e2)', 
+    boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5)', 
   },
   tileHover: {
-    backgroundColor: '#add8e6', 
+    backgroundColor: '#ffeb3b', 
+    color: '#2d4e4e',          
+    transform: 'scale(1.1)',   
+    boxShadow: '6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.7)', 
   },
 };
+
 
 function Rack(props) {
   const { tiles = [] } = props;

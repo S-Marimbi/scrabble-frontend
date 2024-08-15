@@ -21,7 +21,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     border: '1px solid #000',
-    fontSize: '14px',
+    fontSize: '18px',
     fontWeight: 'bold',
   }
 };

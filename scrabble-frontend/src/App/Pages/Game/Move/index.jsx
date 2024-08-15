@@ -56,15 +56,15 @@ function Move({ getBoard, getRack, handleComputerMove }) {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Word:</label>
-          <input type="text" value={word} onChange={(e) => setWord(e.target.value)} required />
+          <input type="text" value={word} onChange={(e) => setWord(e.target.value)} required placeholder='Choose a word'/>
         </div>
         <div>
-          <label>Row (0-14):</label>
-          <input type="number" value={row} onChange={(e) => setRow(e.target.value)} required />
+          <label>Row:</label>
+          <input type="number" value={row} onChange={(e) => setRow(e.target.value)} required placeholder='(0-14)' />
         </div>
         <div>
-          <label>Column (0-14):</label>
-          <input type="number" value={col} onChange={(e) => setCol(e.target.value)} required />
+          <label>Column :</label>
+          <input type="number" value={col} onChange={(e) => setCol(e.target.value)} required placeholder='(0-14)'/>
         </div>
         <div>
           <label>Direction:</label>
@@ -73,7 +73,7 @@ function Move({ getBoard, getRack, handleComputerMove }) {
             <option value="V">Vertical</option>
           </select>
         </div>
-        <button type="submit">Play Move</button>
+        <button className='playmove' type="submit">Play Move</button>
       </form>
     </div>
   );

@@ -24,7 +24,9 @@ function SkipTurn({ getBoard, getRack }) {
   };
 
   return (
-    <button onClick={handleSkip}>Skip Turn</button>
+    <div className='SkipTurn'>
+      <button onClick={handleSkip}>Skip Turn</button>
+    </div>
   );
 }
 
